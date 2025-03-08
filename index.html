@@ -3,69 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OSINT Industries - Tools and Resources</title>
+    <title>OSINT Search Tool</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <h1>OSINT Industries</h1>
-            <nav>
-                <a href="#tools">Tools</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Hero Section (Introduction) -->
-    <section id="hero">
-        <div class="container">
-            <h2>Open Source Intelligence (OSINT) Tools</h2>
-            <p>Your gateway to uncovering information from publicly available sources.</p>
-            <input type="text" id="search-input" placeholder="Search for a domain, IP, or more..." />
-            <button id="search-btn">Search</button>
-        </div>
-    </section>
-
-    <!-- Tools Section -->
-    <section id="tools">
-        <div class="container">
-            <h2>OSINT Tools</h2>
-            <div class="tool">
-                <h3>Shodan</h3>
-                <p>Discover devices connected to the internet using Shodan's search engine.</p>
-                <a href="https://www.shodan.io/" target="_blank">Go to Shodan</a>
-            </div>
-            <div class="tool">
-                <h3>Spyse</h3>
-                <p>Cybersecurity data search engine that helps you gather domain info, IPs, and more.</p>
-                <a href="https://www.spyse.com/" target="_blank">Go to Spyse</a>
-            </div>
-            <div class="tool">
-                <h3>OSINT Framework</h3>
-                <p>A categorized directory of tools and resources for OSINT investigations.</p>
-                <a href="https://osintframework.com/" target="_blank">Go to OSINT Framework</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <h2>About OSINT</h2>
-            <p>OSINT refers to the process of collecting publicly available information and analyzing it for intelligence purposes. This can include data from social media, websites, public records, and more.</p>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>© 2025 OSINT Industries. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="scripts.js"></script>
+    <div class="terminal">
+        <h1>🕵️ OSINT SEARCH CONSOLE</h1>
+        <p class="subtext">Enter a query below to start your investigation...</p>
+        <input type="text" id="searchInput" placeholder="> Enter search query..." autofocus>
+        <button onclick="searchOSINT()">Execute</button>
+        <div id="results"></div>
+        <p class="owner">[ SYSTEM ADMIN: <span class="glitch">Weave</span> ]</p>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
