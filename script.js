@@ -1,22 +1,34 @@
+let selectedSearchType = "General";
+
+function toggleDropdown() {
+    const dropdown = document.getElementById("dropdown");
+    dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+}
+
+function setSearchType(type) {
+    selectedSearchType = type;
+    document.querySelector(".dropdown-btn").innerText = `🔍 ${type}`;
+    document.getElementById("dropdown").style.display = "none";
+}
+
 function searchOSINT() {
     const query = document.getElementById('searchInput').value;
     const resultsDiv = document.getElementById('results');
 
     if (!query.trim()) {
-        resultsDiv.innerHTML = '<p style="color: red;">[ ERROR ] Invalid query. Please enter a valid search term.</p>';
+        resultsDiv.innerHTML = '<p style="color: red;">[ ERROR ] Please enter a search query.</p>';
         return;
     }
 
-    resultsDiv.innerHTML = `<p>⏳ Processing query: "<strong>${query}</strong>"...</p>`;
+    resultsDiv.innerHTML = `<p>⏳ Searching for <strong>${query}</strong> in <strong>${selectedSearchType}</strong>...</p>`;
     
-    // Simulating an OSINT API request (Replace with real API calls)
     setTimeout(() => {
         resultsDiv.innerHTML = `
-            <p>✅ Results for "<strong>${query}</strong>":</p>
+            <p>✅ Results for "<strong>${query}</strong>" (${selectedSearchType}):</p>
             <ul>
-                <li>🔗 <a href="#">Dark Web Intel - ${query}</a></li>
-                <li>🔗 <a href="#">Data Leak Reports - ${query}</a></li>
-                <li>🔗 <a href="#">OSINT Analysis - ${query}</a></li>
+                <li>🔗 <a href="#">OSINT Report - ${query}</a></li>
+                <li>🔗 <a href="#">Leaks & Data - ${query}</a></li>
+                <li>🔗 <a href="#">User Intelligence - ${query}</a></li>
             </ul>
         `;
     }, 1500);
