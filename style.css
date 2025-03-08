@@ -1,68 +1,118 @@
-/* Reset some default styles */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body and layout styles */
+/* Body Styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-}
-
+/* Header Styling */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-}
-
-header h1 {
+    background-color: #007BFF;
+    color: white;
     text-align: center;
+    padding: 20px 0;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
+/* Search Section */
+#search-section {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f9f9f9;
 }
 
-nav ul li {
-    margin: 0 15px;
+#search-input {
+    padding: 10px;
+    width: 60%;
+    font-size: 16px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
-nav ul li a {
-    color: #fff;
+#search-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#search-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Results Section */
+#results-section {
+    padding: 40px 20px;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+
+#results {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+#results a {
+    color: #007BFF;
     text-decoration: none;
-    font-weight: bold;
 }
 
-nav ul li a:hover {
+#results a:hover {
     text-decoration: underline;
 }
 
-section {
-    margin: 20px 0;
+/* OSINT Tools Section */
+#osint-tools {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
 }
 
-section h2 {
-    margin-bottom: 10px;
+.tools {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
+.tool {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.tool h3 {
+    color: #007BFF;
+}
+
+.tool a {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.tool a:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styling */
 footer {
     background-color: #333;
-    color: #fff;
+    color: white;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    padding: 20px 0;
 }
