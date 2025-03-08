@@ -1,14 +1,14 @@
 let selectedSearchType = "General";
 
 function toggleDropdown() {
-    const dropdown = document.getElementById("dropdown");
-    dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+    const dropdown = document.querySelector(".dropdown");
+    dropdown.classList.toggle("open");
 }
 
 function setSearchType(type) {
     selectedSearchType = type;
-    document.querySelector(".dropdown-btn").innerText = `🔍 ${type}`;
-    document.getElementById("dropdown").style.display = "none";
+    document.getElementById("selectedSearch").innerText = `🔍 ${type}`;
+    document.querySelector(".dropdown").classList.remove("open"); // Close dropdown
 }
 
 function searchOSINT() {
