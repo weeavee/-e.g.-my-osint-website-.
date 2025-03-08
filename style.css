@@ -1,81 +1,96 @@
-/* Header */
-header {
-    background-color: #333;
-    padding: 20px 0;
-    color: white;
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+body {
+    background: #000;
+    color: #00ff00;
+    font-family: 'Share Tech Mono', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.terminal {
     text-align: center;
+    background: rgba(0, 0, 0, 0.85);
+    border: 2px solid #00ff00;
+    box-shadow: 0 0 20px #00ff00;
+    padding: 30px;
+    border-radius: 10px;
+    width: 450px;
 }
 
-header h1 {
-    margin-bottom: 10px;
-    font-size: 36px;
+h1 {
+    font-size: 22px;
+    text-shadow: 0 0 8px #00ff00;
 }
 
-header nav a {
-    margin: 0 10px;
-    color: white;
-    text-decoration: none;
+.subtext {
+    font-size: 14px;
+    color: #33ff33;
 }
 
-/* Hero Section */
-#hero {
-    background-color: #007BFF;
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
-}
-
-#hero input {
+input {
+    width: 90%;
     padding: 10px;
-    width: 60%;
-    margin-right: 10px;
+    margin: 15px 0;
+    border: 2px solid #00ff00;
     border-radius: 5px;
-}
-
-#hero button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#hero button:hover {
-    background-color: #555;
-}
-
-/* Tools Section */
-#tools {
-    padding: 40px 20px;
-}
-
-.tool {
-    background-color: white;
-    padding: 20px;
-    margin: 20px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-}
-
-.tool h3 {
-    margin-top: 0;
-    color: #007BFF;
-}
-
-.tool a {
-    text-decoration: none;
-    color: #007BFF;
-}
-
-.tool a:hover {
-    text-decoration: underline;
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
+    background: black;
+    color: #00ff00;
+    font-size: 16px;
     text-align: center;
-    padding: 20px 0;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 10px #00ff00;
+}
+
+button {
+    background: black;
+    color: #00ff00;
+    border: 2px solid #00ff00;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Share Tech Mono', monospace;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #00ff00;
+    color: black;
+    box-shadow: 0 0 10px #00ff00;
+}
+
+#results {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.owner {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #00ff00;
+    text-shadow: 0 0 5px #00ff00;
+}
+
+/* Glitch Effect */
+.glitch {
+    display: inline-block;
+    animation: glitch 1.2s infinite alternate;
+}
+
+@keyframes glitch {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-2px); }
+    40% { transform: translateX(2px); }
+    60% { transform: translateX(-2px); }
+    80% { transform: translateX(2px); }
+    100% { transform: translateX(0); }
 }
