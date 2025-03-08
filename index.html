@@ -3,15 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OSINT Search Tool</title>
+    <title>OSINT Search Console</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="overlay"></div>
     <div class="terminal">
         <h1>🕵️ OSINT SEARCH CONSOLE</h1>
-        <p class="subtext">Enter a query below to start your investigation...</p>
+        <p class="subtext">Select a search type & enter your query...</p>
+
+        <button class="dropdown-btn" onclick="toggleDropdown()">🔽 Select Search Type</button>
+        <div id="dropdown" class="dropdown-content">
+            <p onclick="setSearchType('Discord ID')">🔍 Discord ID</p>
+            <p onclick="setSearchType('Roblox User')">🔍 Roblox User</p>
+            <p onclick="setSearchType('Username')">🔍 Username</p>
+            <p onclick="setSearchType('IP Address')">🔍 IP Address</p>
+            <p onclick="setSearchType('Logins')">🔍 Logins</p>
+            <p onclick="setSearchType('Discord Username')">🔍 Discord Username</p>
+        </div>
+
         <input type="text" id="searchInput" placeholder="> Enter search query..." autofocus>
         <button onclick="searchOSINT()">Execute</button>
+        
         <div id="results"></div>
         <p class="owner">[ SYSTEM ADMIN: <span class="glitch">Weave</span> ]</p>
     </div>
