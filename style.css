@@ -1,115 +1,78 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body Styling */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-/* Header Styling */
+/* Header */
 header {
+    background-color: #333;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+
+header nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section */
+#hero {
     background-color: #007BFF;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 40px 20px;
 }
 
-/* Search Section */
-#search-section {
-    text-align: center;
-    padding: 40px 0;
-    background-color: #f9f9f9;
-}
-
-#search-input {
+#hero input {
     padding: 10px;
     width: 60%;
-    font-size: 16px;
     margin-right: 10px;
     border-radius: 5px;
-    border: 1px solid #ccc;
 }
 
-#search-btn {
+#hero button {
     padding: 10px 20px;
-    font-size: 16px;
-    background-color: #007BFF;
+    background-color: #333;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-#search-btn:hover {
-    background-color: #0056b3;
+#hero button:hover {
+    background-color: #555;
 }
 
-/* Results Section */
-#results-section {
+/* Tools Section */
+#tools {
     padding: 40px 20px;
-    background-color: #fff;
-    border-top: 1px solid #ccc;
-}
-
-#results {
-    margin-top: 20px;
-    font-size: 16px;
-}
-
-#results a {
-    color: #007BFF;
-    text-decoration: none;
-}
-
-#results a:hover {
-    text-decoration: underline;
-}
-
-/* OSINT Tools Section */
-#osint-tools {
-    padding: 40px 20px;
-    background-color: #f9f9f9;
-}
-
-.tools {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
 }
 
 .tool {
     background-color: white;
     padding: 20px;
-    margin: 20px;
-    border-radius: 5px;
+    margin: 20px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    text-align: center;
+    border-radius: 5px;
 }
 
 .tool h3 {
+    margin-top: 0;
     color: #007BFF;
 }
 
 .tool a {
-    padding: 10px;
-    background-color: #007BFF;
-    color: white;
     text-decoration: none;
-    border-radius: 5px;
+    color: #007BFF;
 }
 
 .tool a:hover {
-    background-color: #0056b3;
+    text-decoration: underline;
 }
 
-/* Footer Styling */
+/* Footer */
 footer {
     background-color: #333;
     color: white;
