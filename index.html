@@ -1,55 +1,57 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OSINT Tools</title>
+    <title>OSINT Search Hub</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <div class="container">
-            <h1>OSINT Tools</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#tools">Tools</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>OSINT Search Hub</h1>
+        <p>Your go-to platform for Open Source Intelligence (OSINT) tools and information.</p>
     </header>
 
-    <section id="about">
+    <!-- Search Section -->
+    <section id="search-section">
         <div class="container">
-            <h2>About OSINT</h2>
-            <p>Open Source Intelligence (OSINT) is the process of collecting and analyzing publicly available data to gather actionable intelligence.</p>
+            <input type="text" id="search-input" placeholder="Enter keyword (e.g., IP, domain, person)..." />
+            <button id="search-btn">Search</button>
         </div>
     </section>
 
-    <section id="tools">
-        <div class="container">
-            <h2>OSINT Tools</h2>
-            <ul>
-                <li><a href="https://www.shodan.io/">Shodan</a> - Search engine for internet-connected devices.</li>
-                <li><a href="https://www.spyse.com/">Spyse</a> - A search engine for cybersecurity data.</li>
-                <li><a href="https://osintframework.com/">OSINT Framework</a> - A collection of OSINT tools.</li>
-            </ul>
+    <!-- Search Results Section -->
+    <section id="results-section">
+        <h2>Search Results:</h2>
+        <div id="results"></div>
+    </section>
+
+    <!-- OSINT Tools Section -->
+    <section id="osint-tools">
+        <h2>Popular OSINT Tools</h2>
+        <div class="tools">
+            <div class="tool">
+                <h3>Shodan</h3>
+                <p>Search for devices connected to the internet.</p>
+                <a href="https://www.shodan.io/" target="_blank">Visit Shodan</a>
+            </div>
+            <div class="tool">
+                <h3>Spyse</h3>
+                <p>Search through global cybersecurity data.</p>
+                <a href="https://www.spyse.com/" target="_blank">Visit Spyse</a>
+            </div>
+            <div class="tool">
+                <h3>OSINT Framework</h3>
+                <p>A collection of OSINT tools categorized by type.</p>
+                <a href="https://osintframework.com/" target="_blank">Visit OSINT Framework</a>
+            </div>
         </div>
     </section>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>If you have questions, feel free to reach out!</p>
-        </div>
-    </section>
-
+    <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2025 OSINT Tools. All rights reserved.</p>
-        </div>
+        <p>© 2025 OSINT Search Hub. All rights reserved.</p>
     </footer>
 
     <script src="scripts.js"></script>
