@@ -3,55 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OSINT Search Hub</title>
+    <title>OSINT Industries - Tools and Resources</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header -->
     <header>
-        <h1>OSINT Search Hub</h1>
-        <p>Your go-to platform for Open Source Intelligence (OSINT) tools and information.</p>
+        <div class="container">
+            <h1>OSINT Industries</h1>
+            <nav>
+                <a href="#tools">Tools</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
 
-    <!-- Search Section -->
-    <section id="search-section">
+    <!-- Hero Section (Introduction) -->
+    <section id="hero">
         <div class="container">
-            <input type="text" id="search-input" placeholder="Enter keyword (e.g., IP, domain, person)..." />
+            <h2>Open Source Intelligence (OSINT) Tools</h2>
+            <p>Your gateway to uncovering information from publicly available sources.</p>
+            <input type="text" id="search-input" placeholder="Search for a domain, IP, or more..." />
             <button id="search-btn">Search</button>
         </div>
     </section>
 
-    <!-- Search Results Section -->
-    <section id="results-section">
-        <h2>Search Results:</h2>
-        <div id="results"></div>
-    </section>
-
-    <!-- OSINT Tools Section -->
-    <section id="osint-tools">
-        <h2>Popular OSINT Tools</h2>
-        <div class="tools">
+    <!-- Tools Section -->
+    <section id="tools">
+        <div class="container">
+            <h2>OSINT Tools</h2>
             <div class="tool">
                 <h3>Shodan</h3>
-                <p>Search for devices connected to the internet.</p>
-                <a href="https://www.shodan.io/" target="_blank">Visit Shodan</a>
+                <p>Discover devices connected to the internet using Shodan's search engine.</p>
+                <a href="https://www.shodan.io/" target="_blank">Go to Shodan</a>
             </div>
             <div class="tool">
                 <h3>Spyse</h3>
-                <p>Search through global cybersecurity data.</p>
-                <a href="https://www.spyse.com/" target="_blank">Visit Spyse</a>
+                <p>Cybersecurity data search engine that helps you gather domain info, IPs, and more.</p>
+                <a href="https://www.spyse.com/" target="_blank">Go to Spyse</a>
             </div>
             <div class="tool">
                 <h3>OSINT Framework</h3>
-                <p>A collection of OSINT tools categorized by type.</p>
-                <a href="https://osintframework.com/" target="_blank">Visit OSINT Framework</a>
+                <p>A categorized directory of tools and resources for OSINT investigations.</p>
+                <a href="https://osintframework.com/" target="_blank">Go to OSINT Framework</a>
             </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About OSINT</h2>
+            <p>OSINT refers to the process of collecting publicly available information and analyzing it for intelligence purposes. This can include data from social media, websites, public records, and more.</p>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>© 2025 OSINT Search Hub. All rights reserved.</p>
+        <div class="container">
+            <p>© 2025 OSINT Industries. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="scripts.js"></script>
