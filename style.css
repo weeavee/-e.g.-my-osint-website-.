@@ -1,4 +1,44 @@
+
+/* Hacker-Style Background */
+body {
+    background-color: black;
+    color: #00ff00;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Matrix Code Effect */
+.matrix-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url('https://media.giphy.com/media/l3vRn7XAQwh7HFmCA/giphy.gif');
+    opacity: 0.15;
+}
+
+/* Terminal Style */
+.terminal {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border: 2px solid #00ff00;
+    box-shadow: 0 0 10px #00ff00;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 50px;
+}
+
 /* Dropdown Button */
+.dropdown {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+}
+
 .dropdown-btn {
     background: black;
     color: #00ff00;
@@ -6,11 +46,13 @@
     padding: 10px;
     font-size: 16px;
     cursor: pointer;
-    margin-bottom: 10px;
-    display: block;
     width: 100%;
     text-align: center;
     transition: 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 5px #00ff00;
 }
 
 .dropdown-btn:hover {
@@ -25,18 +67,45 @@
     border: 1px solid #00ff00;
     box-shadow: 0 0 10px #00ff00;
     padding: 10px;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
     text-align: left;
-    margin-bottom: 10px;
+    z-index: 10;
 }
 
-.dropdown-content p {
-    padding: 8px;
-    margin: 0;
-    cursor: pointer;
-    transition: 0.2s;
+.dropdown.open .dropdown-content {
+    display: block;
 }
 
-.dropdown-content p:hover {
+/* Input & Button */
+input, button {
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 2px solid #00ff00;
+    background: black;
+    color: #00ff00;
+    font-size: 16px;
+    text-align: center;
+    box-shadow: 0 0 5px #00ff00;
+}
+
+button:hover {
     background: #00ff00;
     color: black;
+}
+
+/* Glitch Effect */
+@keyframes glitch {
+    0% { text-shadow: 2px 2px #00ff00; }
+    50% { text-shadow: -2px -2px #00ff00; }
+    100% { text-shadow: 2px 2px #00ff00; }
+}
+
+.glitch {
+    display: inline-block;
+    animation: glitch 0.5s infinite alternate;
 }
