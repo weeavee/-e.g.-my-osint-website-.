@@ -7,19 +7,23 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="overlay"></div>
+    <div class="matrix-background"></div> <!-- Matrix effect -->
     <div class="terminal">
         <h1>🕵️ OSINT SEARCH CONSOLE</h1>
         <p class="subtext">Select a search type & enter your query...</p>
 
-        <button class="dropdown-btn" onclick="toggleDropdown()">🔽 Select Search Type</button>
-        <div id="dropdown" class="dropdown-content">
-            <p onclick="setSearchType('Discord ID')">🔍 Discord ID</p>
-            <p onclick="setSearchType('Roblox User')">🔍 Roblox User</p>
-            <p onclick="setSearchType('Username')">🔍 Username</p>
-            <p onclick="setSearchType('IP Address')">🔍 IP Address</p>
-            <p onclick="setSearchType('Logins')">🔍 Logins</p>
-            <p onclick="setSearchType('Discord Username')">🔍 Discord Username</p>
+        <div class="dropdown">
+            <button class="dropdown-btn" onclick="toggleDropdown()">
+                <span id="selectedSearch">🔍 Select Search Type</span> <span class="arrow">⬇️</span>
+            </button>
+            <div id="dropdown" class="dropdown-content">
+                <p onclick="setSearchType('Discord ID')">🔍 Discord ID</p>
+                <p onclick="setSearchType('Roblox User')">🔍 Roblox User</p>
+                <p onclick="setSearchType('Username')">🔍 Username</p>
+                <p onclick="setSearchType('IP Address')">🔍 IP Address</p>
+                <p onclick="setSearchType('Logins')">🔍 Logins</p>
+                <p onclick="setSearchType('Discord Username')">🔍 Discord Username</p>
+            </div>
         </div>
 
         <input type="text" id="searchInput" placeholder="> Enter search query..." autofocus>
